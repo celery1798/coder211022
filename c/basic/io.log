@@ -1,0 +1,25 @@
+格式化输入/输出  printf scanf
+
+printf("format",...);
+format: %[修饰符]格式字符
+
+int i,j;
+float f;
+char ch;
+
+printf("%d,%d\n",i,j);
+
+
+scanf("format",&...);
+format: %[ ]格式字符
+
+
+
+
+字符输入/输出    getchar putchar
+字符串输入/输出  gets puts
+
+
+
+
+

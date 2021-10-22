@@ -1,0 +1,29 @@
+
+[存储类型]  数据类型  变量名 [ =  值];
+
+[存储类型]:
+auto(默认)  register  static  extern
+
+数据类型: 基本数据类型  构造数据类型
+int  float  short    unsigned int   char  
+struct XXX   union XXX
+
+变量名:由数字,字母,下划线组成,不能以数字开头,不能与关键字重复
+student   count_student  _myid   stu1   tmp   Int  deFine     _float   
+FFF: int define  main
+
+
+值:与该变量的数据类型匹配 
+
+int i = 1;
+int i;
+float f = 4.0;
+char ch = 'a';
+
+
+
+
+
+
+
+
