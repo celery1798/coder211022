@@ -8,12 +8,16 @@ void test1()
 {
 	float  q,total;
 
-	printf("Please enter:");
-	scanf("%f",&q);
+	while(1)
+	{
+		printf("Please enter(q for quit):");
+		if(scanf("%f",&q) != 1)
+			break;
 
-	total = q * QUART / WEIGHT;
+		total = q * QUART / WEIGHT;
 
-	printf("total = %e\n",total);
+		printf("total = %e\n",total);
+	}
 }
 
 void test2()
@@ -55,9 +59,9 @@ void test3()
 int main()
 {
 
-//	test1();
+	test1();
 //	test2();
-	test3();
+	//test3();
 	return 0;
 }
 
