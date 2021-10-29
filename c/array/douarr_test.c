@@ -48,13 +48,45 @@ void test2()
 	printf("MAX:a[%d][%d] = %d\n",row,col,max);
 }
 
+void test3()
+{
+	int a[5][4] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}},i,j;
 
+	//4*3  scanf
+//	for(i = 0 ; i < 4; i++)	{a[4][i] = 0; a[i][3]=0; }
+
+	for(i = 0 ; i < 4; i++)
+	{
+		for(j = 0 ; j < 3; j++)
+		{
+			a[4][j] += a[i][j];
+			a[i][3] += a[i][j];
+			a[4][3] += a[i][j];
+		}
+	}	
+
+	for(i = 0 ; i < 5; i++)
+	{
+		for(j = 0 ; j < 4; j++)
+		{
+			printf("%4d",a[i][j]);
+		}
+		printf("\n");
+	}
+
+
+
+
+
+
+}
 
 int main()
 {
 
 //	test1();
-	test2();
+//	test2();
+	test3();
 
 	return 0;
 }
